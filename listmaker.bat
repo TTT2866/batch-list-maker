@@ -1,6 +1,7 @@
 @echo off
 title List maker
 color f
+
 set /a num=0
 
 cls
@@ -8,7 +9,9 @@ echo.
 set destination=%cd%
 echo List title
 set /p title=: 
-set title2=%title: =_%
+set title0=%title: =_%
+set title1=%title0:'=%
+set title2=%title1:,=%
 cls
 echo ========================== >>%destination%\%title2%.txt
 echo %title%.txt >>%destination%\%title2%.txt
