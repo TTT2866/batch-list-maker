@@ -1,7 +1,6 @@
 @echo off
 title List maker
 color f
-mode 60,10
 set /a num=0
 
 cls
